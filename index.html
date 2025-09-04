@@ -191,10 +191,95 @@
               <h2>Gallery</h2>
             </div>
           </div>
-          <div class="row">
+          <div class="row justify-content-center">
             <div class="col-md-3">
               <a href="">
-                <img src="" alt="" />
+                <img
+                  src="img/gallery/gallery1.jpg"
+                  alt="gallery1"
+                  class="img-fluid gallery-img"
+                />
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="">
+                <img
+                  src="img/gallery/gallery2.jpg"
+                  alt="gallery2"
+                  class="img-fluid gallery-img"
+                />
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="">
+                <img
+                  src="img/gallery/gallery3.jpg"
+                  alt="gallery3.jpg"
+                  class="img-fluid gallery-img"
+                />
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="">
+                <img
+                  src="img/gallery/gallery4.jpg"
+                  alt="gallery4.jpg"
+                  class="img-fluid gallery-img"
+                />
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="">
+                <img
+                  src="img/gallery/gallery5.jpg"
+                  alt="gallery5"
+                  class="img-fluid gallery-img"
+                />
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="">
+                <img
+                  src="img/gallery/gallery2.jpg"
+                  alt="gallery2"
+                  class="img-fluid gallery-img"
+                />
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="">
+                <img
+                  src="img/gallery/gallery7.jpg"
+                  alt="gallery7"
+                  class="img-fluid gallery-img"
+                />
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="">
+                <img
+                  src="img/gallery/gallery8.jpg"
+                  alt="gallery8"
+                  class="img-fluid gallery-img"
+                />
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="">
+                <img
+                  src="img/gallery/gallery9.jpg"
+                  alt="gallery9"
+                  class="img-fluid gallery-img"
+                />
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="">
+                <img
+                  src="img/gallery/gallery10.jpg"
+                  alt="gallery10"
+                  class="img-fluid gallery-img"
+                />
               </a>
             </div>
           </div>
@@ -267,6 +352,14 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+      const galleryImage = document.querySelectorAll(".gallery-img");
+
+      galleryImage.forEach((e, i) => {
+        e.dataset.aos = "fade-down";
+        e.dataset.aosDelay = i * 100;
+        e.dataset.aosDuration = 1000;
+      });
+
       AOS.init({
         once: true, //animasi hanya berlaku saat web pertama kali dibuka
       });

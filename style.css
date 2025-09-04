@@ -11,3 +11,12 @@
 footer {
   background-color: #53c570;
 }
+
+.gallery-img {
+  width: 100%;
+}
+
+/* apapun yang ada di dalam setelah row ambil semua paddingnya*/
+#gallery .row > * {
+  padding: 0;
+}
