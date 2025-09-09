@@ -309,6 +309,36 @@
               >
             </div>
           </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="keyboards-box">
+              <div class="keyboards-name">
+                <h4>Keychron K2</h4>
+              </div>
+              <img
+                src="img/keyboards/keyboard2.png"
+                alt="keyboard2"
+                class="keyboard-img"
+              />
+              <a href="" class="btn btn-light keyboards-detail-btn">
+                Show Details</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="keyboards-box">
+              <div class="keyboards-name">
+                <h4>Keychron K2</h4>
+              </div>
+              <img
+                src="img/keyboards/keyboard1.png"
+                alt="keyboard1"
+                class="keyboard-img"
+              />
+              <a href="" class="btn btn-light keyboards-detail-btn">
+                Show Details</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -412,9 +442,10 @@
 
     <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
     <script type="text/javascript">
-      VanillaTilt.init(document.querySelector(".keyboards-box"), {
+      VanillaTilt.init(document.querySelectorAll(".keyboards-box"), {
         max: 25,
         speed: 400,
+        glare: true,
       });
     </script>
 
