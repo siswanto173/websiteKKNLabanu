@@ -286,6 +286,33 @@
     </section>
     <!-- Akhir Gallery -->
 
+    <section id="my-keyboards">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>My Keyboards</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="keyboards-box">
+              <div class="keyboards-name">
+                <h4>Keychron K2</h4>
+              </div>
+              <img
+                src="img/keyboards/keyboard1.png"
+                alt="keyboard1"
+                class="keyboard-img"
+              />
+              <a href="" class="btn btn-light keyboards-detail-btn">
+                Show Details</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact -->
     <section id="contact">
       <div class="container">
@@ -380,6 +407,14 @@
         opacity: 0,
         delay: 0.5,
         ease: "back",
+      });
+    </script>
+
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".keyboards-box"), {
+        max: 25,
+        speed: 400,
       });
     </script>
 
